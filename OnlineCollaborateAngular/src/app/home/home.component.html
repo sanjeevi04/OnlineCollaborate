@@ -1,0 +1,67 @@
+<!-- <div class="main-container">
+    <div class="main">
+        <header>
+            <div class="overlay">
+                <h2 class="title">Welcome to Relaxato City</h2>
+            <br>
+            <br>   
+            <br>
+                <a href="" class="btn">Sign / SignUp</a>
+            </div>
+        </header>
+    </div>
+   
+</div> -->
+<!-- <div class="container">
+    <div class="row align-items-center">
+      <div class="col">
+          <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">Sign In</h2>
+                
+                <button class="btn btn-primary"routerLink="/login-user">Log In</button>
+              </div>
+            </div>
+      </div>
+      <div class="col">
+          <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">Sign Up</h2>
+                <a  routerLink="add-user" class="nav-link" class="btn btn-primary active" role="button" >Registration</a>
+                 <button class="btn btn-primary"routerLink="/add-user">Sign Up/Register</button> 
+              </div>
+            </div>   
+      </div>
+     
+  </div>
+  </div> -->
+  <div class="container">
+    <div class="navbar">
+        <div class="menu">
+           <!-- <h1 class="logo" ><span>BLOGGERS </span></h1> -->
+            <!-- <h2 style="font-weight: bold;text-align:right;color:chartreuse"><br/><br/><br/><I>REGISTRATION FORM</I></h2> -->
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="main">
+            <header>
+                <div class="overlay" id="one">
+                    <h2 class="title"><span style="color:greenyellow">CONNECT TO BLOG</span> </h2>
+                
+                    <div class="bts">
+                       <a mat-list-item  class="nav-link" (click)="logInUser()" class="btn">LOGIN</a>/<a mat-list-item   class="nav-link" (click)="RegUser()" class="btn">REGISTER</a>  
+                      </div>
+                </div>
+            </header>
+        </div>
+        <div class="shadow one"></div>
+        <div class="shadow two"></div>
+    </div>
+</div>
+<div class="pages">
+    <app-login-user></app-login-user>
+</div>
+
+<div class="pagess">
+    <app-register-user></app-register-user>
+</div>

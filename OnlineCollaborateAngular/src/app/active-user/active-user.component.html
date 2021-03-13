@@ -1,0 +1,46 @@
+<h1 style="font-weight: bold; font-style: italic; text-align: center; ">Activate  Users</h1><br>
+<div class="panel">
+    <div class="panel panel-default">
+      
+        <div class="row" [hidden]="!isEnabled">
+            <div class="col-sm-4">
+                <div class="alert alert-info alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <h2 style="text-align: center; font-weight: bold;">User Activated</h2>
+          </div>  
+            </div>
+        </div>
+
+            <div class="panel-body">
+                <table class="table tabele-hover table-sm" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger">
+                <thead class="thead-light">
+                    <tr>
+                        <th>UserID</th>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>UserName</th>
+                        <th>Email</th>
+                        <th>Enabled</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of users">
+                        <td>{{user.userId}}</td>
+                        <td>{{user.firstName }}</td>
+                        <td>{{user.lastName}}</td>
+                        <td>{{user.username}}</td>
+                        <td>{{user.email}}</td>
+                        <td>{{user.enabled}}</td>
+                        <td>{{user.role}}</td>
+                        <td>{{user.status}}</td>
+                        <td> <button (click)="enableUser(user.userId)" class='btn btn-info' data-toggle="modal"
+                            data-target="#myModal">Activate</button> &nbsp; &nbsp;</td>
+                    </tr> 
+                </tbody>
+                </table>
+            </div>
+    </div>
+</div>

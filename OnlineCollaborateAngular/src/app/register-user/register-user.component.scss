@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+    background: linear-gradient(to right, #b92b27, #a7343a)
+}
+
+.row {
+    width: 300px;
+    left: 150%;
+    padding: 20px;
+    position:relative;
+    text-align:center;
+    transition: 0.25s;
+    margin-top: 100px
+}
+
+.row input[type="text"],
+.row input[type="password"],
+.row select {
+    border: 0;
+    background: none;
+    display:flexbox;
+    margin: 10px auto;
+    text-align: center;
+    border: 3px solid #c04444;
+    padding: 5px 10px;
+    width: 200px;
+    outline: none;
+    color: rgb(44, 240, 18);
+    border-radius: 25px;
+    transition: 0.25s
+}
+.row label{
+    color:rgb(197, 202, 206);
+}
+
+.row h2,h4 {
+    color: rgb(211, 42, 42);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.row label:hover{
+   color: yellow;
+}
+.row h2:hover{
+    color:yellow;
+}
+.row a{
+    color:rgb(10, 243, 10);
+}
+.row a:hover{
+    color:palegoldenrod;
+}
+.row input[type="text"]:focus,
+.row input[type="password"]:focus,
+.row select:focus {
+    width: 300px;
+    border-color: #da1297
+}
+.row option{
+    background-color:black;
+}
+
+.row  button[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: rgb(32, 233, 14);
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
+.row 
+button[type="submit"]:hover {
+    background:rebeccapurple
+}
+
+::placeholder {
+    color:rgb(55, 236, 39);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:rgb(80, 243, 40);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color:rgb(78, 245, 45);
+  }
+  .pages{
+    position:absolute;
+    top:10%;
+    left:10%;
+    visibility: hidden;
+
+}
+.form-control{
+    width:100%;
+    border-radius:5px;
+    border: 2px solid rgba(139, 39, 39, 0.856);
+    font-size: 13px;
+    font-family:monospace;
+    
+    }

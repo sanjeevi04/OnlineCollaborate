@@ -1,0 +1,23 @@
+    <div class="login-box">
+        <h2>Login</h2>
+        <form [formGroup]="loginform" (ngSubmit)="validateUser()">           
+            <div class="user-box">              
+                <input type="text" class="form-control"  formControlName="username" data-toggle="tooltip"   
+               data-placement="right" title="Enter Username" placeholder="Username">
+               <div class="alert alert-danger" **ngIf = "(Username.touched) && (Username.invalid)"   
+               style="margin-top: 5px;">  
+                 <span **ngIf="Username.errors.required">Username is Required</span>                     
+               </div>  
+     </div>   
+               
+    <div class="user-box">
+        <input type="password" class="form-control"  formControlName="password" data-toggle="tooltip"   
+        data-placement="right" title="Enter Password"  placeholder="Password"> 
+     <div class="alert alert-danger" **ngIf = "(Password.touched) && (Password.invalid)"   
+       style="margin-top: 5px;">  
+         <span **ngIf="Password.errors.required">Password is Required</span>                    
+       </div> 
+      </div>
+            <button type="submit" class="btn btn-success" >Submit</button>
+        </form>  
+</div>
